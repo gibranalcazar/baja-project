@@ -1,0 +1,58 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+.gradient-background-gn{
+  background-color: #00bfff;
+  background: linear-gradient(300deg, #ef8172,#ef8172,#ef8172,#00bfff, #ff4c68, #ef8172, #ef8172);
+  background-size: 200% 100%;
+  /* animation: gn-animation 20s ease infinite; */
+  animation-name: gn-animation;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  /* animation-timing-function: linear; */
+  animation-iteration-count: infinite;
+  /* animation-direction: reverse; */
+}
+
+@keyframes gn-animation{
+  0%   {
+    background-position: 0% 50%;}
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 150% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 40%;
+}
